@@ -3,7 +3,6 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file search-photos.yaml --s3-bucket lambda-deployement-pipeline-bucketi --output-template-file search-new.yaml
-artifacts:  
-  type: yaml
+artifacts:
   files:
     - search-photos.yaml
