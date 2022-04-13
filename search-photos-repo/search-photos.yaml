@@ -3,10 +3,10 @@ Transform: 'AWS::Serverless-2016-10-31'
 Description: Lambda NodeJS starter project
 Parameters:
 LambdaName:
-    Description: "search-photos"
+    Description: "search-photos-code-pipeline"
     Type: "String"
 LambdaRole:
-    Description: "Role for this function"
+    Description: "Lambda-AWS-Codepipeline"
     Type: "String"
 Resources:
   LambdaInstagramWrapper:

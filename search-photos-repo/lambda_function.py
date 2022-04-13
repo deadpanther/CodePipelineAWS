@@ -15,7 +15,7 @@ logger.setLevel(logging.DEBUG)
 
 headers = { "Content-Type": "application/json" }
 host = 'https://search-photos-4xttynqx2xfjhzz4cvf4tlz2ma.us-west-2.es.amazonaws.com/'
-region = 'us-west-2'
+region = 'us-east-1'
 lex = boto3.client('lex-runtime', region_name=region)
 
 def lambda_handler(event, context):
@@ -50,7 +50,7 @@ def lambda_handler(event, context):
     
 def get_labels(query):
     response = lex.post_text(
-        botName='SearchBot',                 
+        botName='bottest',                 
         botAlias='$LATEST',
         userId="string",           
         inputText=query
